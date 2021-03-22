@@ -251,4 +251,9 @@ img {
    vertical-align: -0.35em;
 }
 
+.message {
+    display: inline-block;
+    vertical-align: top;
+}
+
 {{ pygments_css }}

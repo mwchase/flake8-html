@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', function () {
                <span class="count sev-{{ sev }}">
                   {{ count }}
                </span>
-               <strong>{{ code }}:</strong> <pre>{{ text }}</pre>
+               <strong>{{ code }}:</strong> <pre class="message">{{ text }}</pre>
                {% if msg_count > 1 %}
                   (and {{ msg_count - 1 }} similar)
                {% endif %}
