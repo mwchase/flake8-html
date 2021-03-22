@@ -28,7 +28,7 @@
                      <span class="count sev-{{ sev }}">
                         {{ code }}
                      </span>
-                     {{ text|sentence }}
+                     <pre>{{ text }}</pre>
                      {%- if count > 1 %} (in {{ count }} places){% endif -%}
                   </li>
                {% endfor %}
