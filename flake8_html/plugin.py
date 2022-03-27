@@ -230,7 +230,7 @@ class HTMLPlugin(base.BaseFormatter):
         return path
 
     def _format_source(self, source):
-        formatter = HtmlFormatter(nowrap=True)
+        formatter = HtmlFormatter(nowrap=True, style="solarized-dark")
         html = highlight(source, PythonLexer(), formatter)
         return {
             'html_lines': [Markup(ln) for ln in html.splitlines()],
@@ -253,7 +253,7 @@ class HTMLPlugin(base.BaseFormatter):
 
     def write_styles(self):
         """Write the stylesheet."""
-        formatter = HtmlFormatter(nowrap=True)
+        formatter = HtmlFormatter(nowrap=True, style="solarized-dark")
         tmpl = jinja2_env.get_template('styles.css')
 
         rendered = tmpl.render(

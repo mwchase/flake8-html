@@ -1,9 +1,12 @@
 html {
+   background-color: #002b36;
+   color: #839496;
    font-family: sans-serif;
    font-size: 90%;
 }
 
 #masthead {
+   background-color: #073642;
    position: fixed;
    left: 0;
    top: 0;
@@ -17,7 +20,7 @@ h1, h2 {
 }
 
 h1 {
-   color: white;
+   color: #93a1a1;
    font-size: 36px;
    margin-top: 1em;
 }
@@ -31,7 +34,7 @@ h2 {
 }
 
 h1 a {
-   color: white;
+   color: #93a1a1;
 }
 
 #versions {
@@ -45,7 +48,7 @@ h1 a {
 }
 
 #index {
-   background-color: white;
+   background-color: #002b36;
    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
    padding: 0;
    margin: 0;
@@ -58,7 +61,7 @@ h1 a {
 }
 
 #index li + li {
-   border-top: solid silver 1px;
+   border-top: solid #839496 1px;
 }
 
 .details p {
@@ -90,39 +93,51 @@ h1 a {
 }
 
 #index a:hover {
-   background-color: #eee;
+   background-color: #073642;
 }
 
 .count {
+   background-color: #073642;
    display: inline-block;
    border-radius: 50%;
    text-align: center;
    width: 2.5em;
    line-height: 2.5em;
    height: 2.5em;
-   color: white;
    margin-right: 1em;
 }
 
-.sev-1 {
-   background-color: #a00;
+.count.sev-1, .sev-1 tt i {
+   color: #dc322f;
 }
-.sev-2 {
-   background-color: #b80;
+.count.sev-2, .sev-2 tt i {
+   color: #b58900;
 }
-.sev-3 {
-   background-color: #28c;
+.count.sev-3, .sev-3 tt i {
+   color: #268bd2;
 }
-.sev-4 {
-   background-color: #383;
+.count.sev-4, .sev-4 tt i {
+   color: #859900;
 }
 
 a {
    text-decoration: none;
 }
 
+a:link {
+    color: #268bd2;
+}
+
+a:visited {
+    color: #6c71c4;
+}
+
+a:active {
+    color: #dc322f;
+}
+
 #doc {
-   background-color: white;
+   background-color: #002b36;
    margin: 1em 0;
    padding: 1em;
    padding-left: 1.2em;
@@ -140,7 +155,7 @@ a {
    margin: 1.2em 0 0 3em;
    padding: 0.5em 1em;
    font-size: 14px;
-   background-color: white;
+   background-color: #002b36;
    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
    display: none;
 }
@@ -176,23 +191,14 @@ tt {
 }
 
 tt i {
-   color: silver;
+   background-color: #073642;
    display: inline-block;
    text-align: right;
    width: 3em;
-   box-sizing: border-box;
-   height: 100%;
-   border-right: solid #eee 1px;
-   padding-right: 0.2em;
-}
-
-.le {
-   background-color: #ffe8e8;
-   cursor: pointer;
 }
 
 .le:hover {
-   background-color: #fcc;
+   background-color: #073642;
 }
 
 .details {
@@ -232,18 +238,7 @@ ul.details {
 }
 
 .le {
-   background-color: #ffe8e8;
    cursor: pointer;
-}
-
-.le.sev-1 {
-   background-color: #f88;
-}
-.le.sev-2 {
-   background-color: #fda;
-}
-.le.sev-3 {
-   background-color: #adf;
 }
 
 img {
